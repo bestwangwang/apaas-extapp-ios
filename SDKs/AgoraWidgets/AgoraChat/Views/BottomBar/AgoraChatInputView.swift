@@ -183,9 +183,7 @@ extension AgoraChatInputView: AgoraUIContentContainer {
                              for: .touchUpInside)
         
         contentView.addSubviews([sendButton,
-                                 inputField,
-                                 emojiButton,
-                                 imageButton])
+                                 inputField])
     }
     
     func initViewFrame() {
@@ -204,16 +202,16 @@ extension AgoraChatInputView: AgoraUIContentContainer {
                 make?.right.equalTo()(20)
             }
         }
-        imageButton.mas_makeConstraints { make in
-            make?.right.equalTo()(sendButton.mas_left)?.offset()(-10)
-            make?.centerY.equalTo()(sendButton)
-            make?.width.height().equalTo()(24)
-        }
-        emojiButton.mas_makeConstraints { make in
-            make?.right.equalTo()(imageButton.mas_left)?.offset()(-10)
-            make?.centerY.equalTo()(sendButton)
-            make?.width.height().equalTo()(24)
-        }
+//        imageButton.mas_makeConstraints { make in
+//            make?.right.equalTo()(sendButton.mas_left)?.offset()(-10)
+//            make?.centerY.equalTo()(sendButton)
+//            make?.width.height().equalTo()(24)
+//        }
+//        emojiButton.mas_makeConstraints { make in
+//            make?.right.equalTo()(imageButton.mas_left)?.offset()(-10)
+//            make?.centerY.equalTo()(sendButton)
+//            make?.width.height().equalTo()(24)
+//        }
         inputField.mas_makeConstraints { make in
             make?.height.equalTo()(34)
             if #available(iOS 11.0, *) {
@@ -221,7 +219,7 @@ extension AgoraChatInputView: AgoraUIContentContainer {
             } else {
                 make?.left.equalTo()(20)
             }
-            make?.right.equalTo()(self.emojiButton.mas_left)?.offset()(-10)
+            make?.right.equalTo()(self.sendButton.mas_left)?.offset()(-10)
             make?.centerY.equalTo()(self.contentView)
             make?.height.equalTo()(sendButton)
         }

@@ -316,8 +316,8 @@ struct FcrWidgetUIItemAgoraChatMuteAll: FcrWidgetUIItemProtocol {
 }
 
 struct FcrWidgetUIItemAgoraChatEmoji: FcrWidgetUIItemProtocol {
-    var visible: Bool           = true
-    var enable: Bool            = true
+    var visible: Bool           = false
+    var enable: Bool            = false
     
     var normalImage: UIImage?   = .widgets_image("icon_emoji")
     var selectedImage: UIImage? = .widgets_image("icon_keyboard")
@@ -328,8 +328,8 @@ struct FcrWidgetUIItemAgoraChatEmoji: FcrWidgetUIItemProtocol {
 }
 
 struct FcrWidgetUIItemAgoraChatPicture: FcrWidgetUIItemProtocol {
-    var visible: Bool            = true
-    var enable: Bool             = true
+    var visible: Bool            = false
+    var enable: Bool             = false
     
     let cornerRadius: CGFloat    = FcrWidgetUIFrameGroup.containerCornerRadius
     var image: UIImage?          = .widgets_image("icon_image")
