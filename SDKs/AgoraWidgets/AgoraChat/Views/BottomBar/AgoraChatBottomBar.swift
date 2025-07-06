@@ -23,7 +23,7 @@ protocol AgoraChatBottomBarDelegate: NSObjectProtocol {
 class AgoraChatBottomBar: UIView {
     weak var delegate: AgoraChatBottomBarDelegate?
     
-    var functions: [AgoraChatBottomBarFunction] = [.input, .emoji, .picture, .mute] {
+    var functions: [AgoraChatBottomBarFunction] = [.input, .mute] {
         didSet {
             updateViewFrame()
         }
