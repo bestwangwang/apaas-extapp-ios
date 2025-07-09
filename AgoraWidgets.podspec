@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "10.0"
   spec.swift_versions        = ["5.0", "5.1", "5.2", "5.3", "5.4"]
 
-  spec.source       = { :git => "git@github.com:AgoraIO-Community/apaas-extapp-ios.git", :tag => "AgoraWidgets_v" + "#{spec.version.to_s}" }
+  spec.source       = { :git => "git@github.com:bestwangwang/apaas-extapp-ios.git", :tag => "AgoraWidgets_v" + "#{spec.version.to_s}" }
 
   spec.source_files = "SDKs/AgoraWidgets/**/**/*.{h,m,swift}"
   
