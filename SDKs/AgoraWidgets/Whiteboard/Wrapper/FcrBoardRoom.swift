@@ -202,8 +202,7 @@ private extension FcrBoardRoom {
         
         let roomConfig = WhiteRoomConfig(uuid: config.roomId,
                                          roomToken: config.roomToken,
-                                         uid: config.userId,
-                                         userPayload: ["cursorName": config.userName])
+                                         uid: config.userId)
         roomConfig.floatBar = true
         roomConfig.isWritable = config.hasOperationPrivilege
         roomConfig.disableNewPencil = false
